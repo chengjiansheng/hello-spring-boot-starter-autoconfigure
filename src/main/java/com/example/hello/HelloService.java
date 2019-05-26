@@ -6,10 +6,19 @@ package com.example.hello;
  */
 public class HelloService {
 
+    /**
+     * 姓名
+     */
     private String name;
 
+    /**
+     * 年龄
+     */
     private Integer age;
 
+    /**
+     * 家乡
+     */
     private String hometown;
 
     public HelloService(String name, Integer age, String hometown) {

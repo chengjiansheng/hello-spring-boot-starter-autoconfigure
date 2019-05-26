@@ -1,50 +1,29 @@
 package com.example.hello;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * @author ChengJianSheng
  * @date 2019-05-26
  */
+@Data
 @ConfigurationProperties("my.hello")
 public class HelloProperties {
 
+    /**
+     * 姓名
+     */
     private String name;
 
+    /**
+     * 年龄
+     */
     private Integer age;
 
+    /**
+     * 家乡
+     */
     private String hometown;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public String getHometown() {
-        return hometown;
-    }
-
-    public void setHometown(String hometown) {
-        this.hometown = hometown;
-    }
-
-    @Override
-    public String toString() {
-        return "HelloProperties{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", hometown='" + hometown + '\'' +
-                '}';
-    }
 }
